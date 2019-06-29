@@ -5,9 +5,18 @@
   "repository": "https://github.com/MatthewStanciu/site-2019.git",
   "author": "MatthewStanciu",
   "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "fmt": "prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
+  },
   "dependencies": {
     "gatsby": "^2.11.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
   }
 }
