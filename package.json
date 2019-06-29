@@ -1,0 +1,13 @@
+{
+  "name": "site-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MatthewStanciu/site-2019.git",
+  "author": "MatthewStanciu",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.11.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
