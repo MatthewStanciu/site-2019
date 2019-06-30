@@ -2,6 +2,8 @@ import React from 'react'
 import { createGlobalStyle, ThemeProvider as Root } from 'styled-components'
 import theme from './theme'
 
+const theme = theme
+
 export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -31,3 +33,14 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${colors.cream};
   }
 `
+
+const ThemeProvider = ({ children }) => (
+    <Root theme={theme}>
+      <>
+        <GlobalStyle />
+        {children}
+      </>
+    </Root>
+  )
+  
+  export default ThemeProvider
