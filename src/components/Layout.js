@@ -17,7 +17,6 @@ const BorderWrapper = styled(Flex).attrs({
   height: 100%;
 `
 
-
 export const Layout = ({ children }) => (
   <ThemeProvider>
     <Helmet title="Matthew Stanciu">
