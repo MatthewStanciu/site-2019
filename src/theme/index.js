@@ -1,8 +1,8 @@
 import React from 'react'
 import { createGlobalStyle, ThemeProvider as Root } from 'styled-components'
-import theme from './theme'
+import config from './config'
 
-const theme = theme
+export const theme = config
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -29,8 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    font-family: ${font};
-    background-color: ${colors.cream};
+    font-family: ${theme.font};
+    background-color: ${theme.colors.cream};
   }
 `
 
