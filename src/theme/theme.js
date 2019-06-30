@@ -1,5 +1,3 @@
-import { createGlobalStyle } from 'styled-components'
-
 const colors = {
     cream: '#EFE3D5',
     red: '#DB3847',
