@@ -3,5 +3,31 @@
     "github": "MatthewStanciu",
     "twitter": "MatthewStanciu",
     "instagram": "matthewstanciu"
-  }
+  },
+  "projects": [
+    {
+      "name": "Windy City Hacks",
+      "desc": "aaa a aaa aaaaaa",
+      "url": "https://windyhacks.com/",
+      "img": "windy.jpg"
+    },
+    {
+      "name": "West Lafayette Hack Club",
+      "desc": "a a  aa aaaaa aaaaa",
+      "url": "https://hackclub.com/",
+      "img": "hackclub-map.png"
+    },
+    {
+      "name": "Hack Pennsylvania",
+      "desc": " aa  aaaaaaa  a",
+      "url": "https://hackpenn.com/",
+      "img": "hackpenn.jpg"
+    },
+    {
+      "name": "CodeDay Indianapolis",
+      "desc": "aa aaaaa aaa  aa",
+      "url": "https://codeday.org/indy",
+      "img": "codeday-indy.jpg"
+    }
+  ]
 }

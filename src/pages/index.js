@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme/config'
-import { Box, Flex, Heading } from 'rebass'
+import { Box, Flex, Heading, Text } from 'rebass'
 import { Layout } from '../components/Layout'
 import { Container } from '../components/Container'
+import Project from '../components/Project'
 import Icon from '@hackclub/icons'
-import { services } from '../data.json'
+import { services, projects } from '../data.json'
 
-const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
+const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: 6 })`
   display: grid;
   grid-gap: 32px;
   text-align: center;
@@ -22,6 +23,12 @@ const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
     svg {
       width: 64px;
       height: 64px;
+    }
+  }
+
+  ${theme.mediaQueries.dark} {
+    svg {
+      color: ${theme.colors.lightBlue};
     }
   }
 
@@ -45,7 +52,7 @@ const Portrait = styled.img`
   overflow: hidden;
   min-height: 18rem;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
   object-fit: cover;
   ${theme.mediaQueries.md} {
@@ -85,6 +92,7 @@ export default () => (
           flexWrap="wrap"
           justifyContent={['center', null, 'flex-start']}
           mt={[2, 3]}
+          mb={[3, 4]}
         >
           {Object.entries(services).map(([service, username]) => (
             <Service
@@ -95,7 +103,21 @@ export default () => (
           ))}
           <Service service="email" href="mailto:matthew@matthewstanciu.me" />
         </Flex>
+
+        <Text fontSize={[3, 4]}>
+          I’m a 17-year-old high schooler from West Lafayette, IN. Words words
+          words words words words words words words words words words words
+          words words words words words words words.
+        </Text>
       </Box>
     </Header>
+    <Container maxWidth={48}>
+      <Heading as="h2" textAlign="center" mb={4} fontSize={[5, null, 5, 6]}>
+        Recent Projects
+      </Heading>
+      {projects.map(project => (
+        <Project {...project} key={project.img} />
+      ))}
+    </Container>
   </Layout>
 )
