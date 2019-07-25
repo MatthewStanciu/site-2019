@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    padding: ${theme.space[3]}px;
     position: relative;
     height: 100%;
     width: 100%;

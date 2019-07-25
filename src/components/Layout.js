@@ -1,22 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import ThemeProvider from '../theme'
-import styled from 'styled-components'
-import { Flex } from 'rebass'
 
-const BorderWrapper = styled(Flex).attrs({
-  as: 'main',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  p: 3,
-  m: 3
-})`
-  position: relative;
-  height: 100%;
-`
-
-export const Layout = ({ children }) => (
+export default ({ children }) => (
   <ThemeProvider>
     <Helmet title="Matthew Stanciu">
       <html lang="en" />
@@ -30,6 +16,6 @@ export const Layout = ({ children }) => (
         rel="stylesheet"
       />
     </Helmet>
-    <BorderWrapper>{children}</BorderWrapper>
+    {children}
   </ThemeProvider>
 )
