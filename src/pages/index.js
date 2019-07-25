@@ -4,7 +4,6 @@ import theme from '../theme/config'
 import { Box, Flex, Heading } from 'rebass'
 import { Layout } from '../components/Layout'
 import { Container } from '../components/Container'
-import { Portrait } from '../components/Portrait'
 import Icon from '@hackclub/icons'
 
 const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
@@ -38,6 +37,18 @@ const Space = styled.span`
     ${theme.mediaQueries.sm} {
       content: '';
     }
+  }
+`
+
+const Portrait = styled.img`
+  overflow: hidden;
+  min-height: 18rem;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
+  object-fit: cover;
+  ${theme.mediaQueries.md} {
+    min-height: 28rem;
   }
 `
 
