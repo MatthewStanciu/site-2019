@@ -127,10 +127,10 @@ export default () => (
 
         <Text fontSize={[3, 4]} mb={3}>
           I’m a 17-year-old rising high school senior from West Lafayette,
-          Indiana. I write code, I organize hackathons, and I eat Chipotle.
+          Indiana. I write code, organize hackathons, and eat Chipotle.
         </Text>
         <Text fontSize={[3, 4]}>
-          I'm passionate about bringing tech opportunities to people who don't
+          I’m passionate about bringing tech opportunities to people who don’t
           have them, particularly to the Midwest. From{' '}
           <ProjectLink target="_" href="https://windyhacks.com">
             Windy City Hacks
@@ -145,7 +145,7 @@ export default () => (
     </Header>
     <Container maxWidth={48}>
       <Heading as="h2" textAlign="center" mb={4} fontSize={[5, null, 5, 6]}>
-        What I'm Working On
+        What I’m Working On
       </Heading>
       {projects.map(project => (
         <Project {...project} key={project.img} />

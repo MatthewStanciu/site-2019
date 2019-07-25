@@ -39,7 +39,6 @@ export const GridItem = styled(Card).attrs({
     }
     picture {
       max-width: 45% !important;
-      min-height,height: 100%;
       object-fit: cover;
     }
   }
@@ -55,7 +54,6 @@ export const GridItem = styled(Card).attrs({
   picture {
     width: 100%;
     max-width: 100%;
-    min-height,height: 100%;
   }
   img {
     width: 100%;
