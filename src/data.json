@@ -12,26 +12,26 @@
   "projects": [
     {
       "name": "Windy City Hacks",
-      "desc": "aaa a aaa aaaaaa",
+      "desc": "On June 22-23, 2019, I ran Windy City Hacks, a 24-hour high school hackathon in Chicago. I spent 4 months leading a team of 7 to organize this event, raising a total of $14k and garnering 320 signups (160 of which attended).",
       "url": "https://windyhacks.com/",
       "img": "windy.jpg"
     },
     {
       "name": "West Lafayette Hack Club",
-      "desc": "a a  aa aaaaa aaaaa",
+      "desc": "I've been leading a Hack Club at my high school for 2 years. Meetings run like mini-hackathons where students learn to code by working on self-directed projects.",
       "url": "https://hackclub.com/",
       "img": "hackclub-map.png",
       "imgDark": "hackclub-map-dark.png"
     },
     {
       "name": "Hack Pennsylvania",
-      "desc": " aa  aaaaaaa  a",
+      "desc": "On January 19-20, 2019, I helped organize Pennsylvania's largest high school hackathon in State College, PA. After 3 months of organizing, we raised $15k and garnered 207 signups (111 of which attended).",
       "url": "https://hackpenn.com/",
       "img": "hackpenn.jpg"
     },
     {
       "name": "CodeDay Indianapolis",
-      "desc": "aa aaaaa aaa  aa",
+      "desc": "Last August, I started CodeDay Indianapolis, which ran for the first time on November 10-11, 2018 and for the second time on February 16-17, 2019. Though small (15-20 attendees), it was the first event of its kind ever organized in Indiana.",
       "url": "https://codeday.org/indy",
       "img": "codeday-indy.jpg"
     }

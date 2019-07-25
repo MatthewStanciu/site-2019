@@ -39,6 +39,8 @@ export const GridItem = styled(Card).attrs({
     }
     picture {
       max-width: 45% !important;
+      min-height,height: 100%;
+      object-fit: cover;
     }
   }
   ${theme.mediaQueries.lg} {
@@ -53,7 +55,7 @@ export const GridItem = styled(Card).attrs({
   picture {
     width: 100%;
     max-width: 100%;
-    max-height: 12rem;
+    min-height,height: 100%;
   }
   img {
     width: 100%;
@@ -68,11 +70,11 @@ export const GridItemBanner = styled(Box).attrs({
   p: 3
 })`
   display: block;
-  line-height: 1;
+  line-height: 1.25;
   flex: 1 1 auto;
   flex-shrink: none;
   ${theme.mediaQueries.md} {
-    min-width: 24rem;
+    width: 24rem;
   }
   ${theme.mediaQueries.dark} {
     background-color: ${theme.colors.blue};
@@ -92,7 +94,7 @@ const Project = ({ name, desc, url, img, imgDark }) => (
       <img src={require(`../../static/${img}`)} alt={name} />
     </picture>
     <GridItemBanner>
-      <Heading as="h3" mb={2}>
+      <Heading as="h3" fontSize={[4, 5]} mb={2}>
         {name}
       </Heading>
       <Text>{desc}</Text>
