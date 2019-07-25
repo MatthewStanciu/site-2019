@@ -131,7 +131,7 @@ export default () => (
         </Text>
         <Text fontSize={[3, 4]}>
           I’m passionate about bringing tech opportunities to people who don’t
-          have them, particularly to studnets in the Midwest. From{' '}
+          have them, particularly to students in the Midwest. From{' '}
           <ProjectLink target="_" href="https://windyhacks.com">
             Windy City Hacks
           </ProjectLink>{' '}
