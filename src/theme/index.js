@@ -26,10 +26,12 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     font-family: ${theme.font};
     background-color: ${theme.colors.cream};
+    color: ${theme.colors.coffee};
   }
-  @media (prefers-color-scheme: dark) {
+  ${theme.mediaQueries.dark} {
     body {
       background-color: ${theme.colors.coffee};
+      color: ${theme.colors.cream};
     }
   }
 `

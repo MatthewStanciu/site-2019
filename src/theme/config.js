@@ -16,7 +16,8 @@ const mediaQueries = {
   sm: '@media (min-width: 32em)',
   md: '@media (min-width: 48em)',
   lg: '@media (min-width: 64em)',
-  xl: '@media (min-width: 80em)'
+  xl: '@media (min-width: 80em)',
+  dark: '@media (prefers-color-scheme: dark)'
 }
 
 const theme = {
