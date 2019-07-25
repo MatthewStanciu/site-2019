@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme/config'
 import Layout from '../components/Layout'
-import { Box, Flex, Heading, Text } from 'rebass'
+import { Box, Flex, Heading, Text, Link } from 'rebass'
 import { Container } from '../components/Container'
 import Project from '../components/Project'
 import Icon from '@hackclub/icons'
@@ -74,6 +74,27 @@ const Service = ({ href, service, ...props }) => (
   />
 )
 
+const ProjectLink = styled(Link)`
+  text-decoration: none;
+  transition: ease-out color 0.125s;
+  color: ${theme.colors.blue};
+
+  &:hover,
+  &:focus {
+    color: ${theme.colors.lightBlue};
+    transition: color 0.125s ease-in;
+  }
+
+  ${theme.mediaQueries.dark} {
+    color: ${theme.colors.lightBlue};
+
+    &:hover,
+    &:focus {
+      color: ${theme.colors.blue};
+    }
+  }
+`
+
 export default () => (
   <Layout>
     <Header>
@@ -104,10 +125,21 @@ export default () => (
           <Service service="email" href="mailto:matthew@matthewstanciu.me" />
         </Flex>
 
+        <Text fontSize={[3, 4]} mb={3}>
+          I’m a 17-year-old rising high school senior from West Lafayette,
+          Indiana. I write code, I organize hackathons, and I eat Chipotle.
+        </Text>
         <Text fontSize={[3, 4]}>
-          I’m a 17-year-old high schooler from West Lafayette, IN. Words words
-          words words words words words words words words words words words
-          words words words words words words words.
+          I'm passionate about bringing tech opportunities to people who don't
+          have them, particularly to the Midwest. From{' '}
+          <ProjectLink target="_" href="https://windyhacks.com">
+            Windy City Hacks
+          </ProjectLink>{' '}
+          to the{' '}
+          <ProjectLink target="_" href="https://hackclub.com">
+            Hack Club
+          </ProjectLink>{' '}
+          I lead at my school, I do everything I do for others.
         </Text>
       </Box>
     </Header>
