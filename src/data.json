@@ -1,4 +1,9 @@
 {
+  "name": "Matthew Stanciu",
+  "title": "Matthew Stanciu",
+  "description": "A 17-year-old high school hacker from West Lafayette, IN",
+  "url": "https://matthewstanciu.me",
+  "img": "https://matthewstanciu.me/card.png",
   "services": {
     "github": "MatthewStanciu",
     "twitter": "MatthewStanciu",
