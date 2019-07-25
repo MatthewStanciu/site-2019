@@ -9,23 +9,19 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "fmt": "prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
+    "fmt": "npx prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
   },
   "dependencies": {
     "@hackclub/icons": "^0.0.2",
-    "gatsby": "^2.11.5",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-styled-components": "^3.1.0",
-    "lodash": "^4.17.11",
-    "palx": "^1.0.3",
+    "gatsby": "^2.13.39",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "rebass": "^3.1.1",
+    "rebass": "^3.1.2",
     "styled-components": "^4.3.2",
-    "styled-system": "^5.0.12"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
+    "styled-system": "^5.0.16"
   }
 }
