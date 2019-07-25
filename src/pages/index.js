@@ -139,7 +139,7 @@ export default () => (
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
           </ProjectLink>{' '}
-          I lead at my school, I do everything I do for others.
+          I lead at my school, I try to make an impact with everything I do.
         </Text>
       </Box>
     </Header>
