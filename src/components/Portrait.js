@@ -1,16 +1,15 @@
-import React from 'react'
 import styled from 'styled-components'
+import theme from '../theme/config'
 import { Card } from 'rebass'
 
-export const Portrait = styled(Card)`
-    overflow: hidden;
-    min-height: 12rem;
-    border-radius: 6px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
-    line-height: 0;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-  `
+export const Portrait = styled.img`
+  overflow: hidden;
+  min-height: 18rem;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
+  object-fit: cover;
+  ${theme.mediaQueries.md} {
+    min-height: 36rem;
+  }
+`

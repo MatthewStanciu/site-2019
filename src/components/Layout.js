@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import ThemeProvider from '../theme'
 import styled from 'styled-components'
 import { Flex } from 'rebass'
-import '../static/fonts.css'
 
 const BorderWrapper = styled(Flex).attrs({
   as: 'main',
@@ -25,6 +24,10 @@ export const Layout = ({ children }) => (
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,viewport-fit=cover"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap"
+        rel="stylesheet"
       />
     </Helmet>
     <BorderWrapper>{children}</BorderWrapper>

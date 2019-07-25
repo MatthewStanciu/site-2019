@@ -20,27 +20,27 @@ export const GlobalStyle = createGlobalStyle`
     min-width: 100%;
   }
   body {
-    padding: 0;
     margin: 0;
     position: relative;
     height: 100%;
-    max-height: 100%;
     width: 100%;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
     font-family: ${theme.font};
     background-color: ${theme.colors.cream};
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: ${theme.colors.coffee};
+    }
   }
 `
 
 const ThemeProvider = ({ children }) => (
-    <Root theme={theme}>
-      <>
-        <GlobalStyle />
-        {children}
-      </>
-    </Root>
-  )
-  
-  export default ThemeProvider
+  <Root theme={theme}>
+    <>
+      <GlobalStyle />
+      {children}
+    </>
+  </Root>
+)
+
+export default ThemeProvider
