@@ -12,7 +12,4 @@ export const Portrait = styled.img`
   ${theme.mediaQueries.md} {
     min-height: 28rem;
   }
-  ${theme.mediaQueries.lg} {
-    min-height: 28rem;
-  }
 `
