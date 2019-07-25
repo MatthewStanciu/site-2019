@@ -77,20 +77,20 @@ const Service = ({ href, service, ...props }) => (
 const ProjectLink = styled(Link)`
   text-decoration: none;
   transition: ease-out color 0.125s;
-  color: ${theme.colors.blue};
+  color: ${theme.colors.red};
 
   &:hover,
   &:focus {
-    color: ${theme.colors.lightBlue};
+    color: ${theme.colors.lightRed};
     transition: color 0.125s ease-in;
   }
 
   ${theme.mediaQueries.dark} {
-    color: ${theme.colors.lightBlue};
+    color: ${theme.colors.lightRed};
 
     &:hover,
     &:focus {
-      color: ${theme.colors.blue};
+      color: ${theme.colors.red};
     }
   }
 `
