@@ -5,6 +5,7 @@ import { Box, Flex, Heading } from 'rebass'
 import { Layout } from '../components/Layout'
 import { Container } from '../components/Container'
 import Icon from '@hackclub/icons'
+import { services } from '../data.json'
 
 const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
   display: grid;
@@ -65,12 +66,6 @@ const Service = ({ href, service, ...props }) => (
     {...props}
   />
 )
-
-const services = {
-  github: 'MatthewStanciu',
-  twitter: 'MatthewStanciu',
-  instagram: 'matthewstanciu'
-}
 
 export default () => (
   <Layout>
