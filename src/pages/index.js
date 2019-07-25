@@ -131,15 +131,15 @@ export default () => (
         </Text>
         <Text fontSize={[3, 4]}>
           I’m passionate about bringing tech opportunities to people who don’t
-          have them, particularly to students in the Midwest. From organizing{' '}
+          have them, particularly to students in the Midwest. From{' '}
           <ProjectLink target="_" href="https://windyhacks.com">
             Windy City Hacks
           </ProjectLink>{' '}
-          to leading a{' '}
+          to the{' '}
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
           </ProjectLink>{' '}
-          at my school, I try to make an impact with everything I do.
+          I lead at my school, I try to make an impact with everything I do.
         </Text>
       </Box>
     </Header>
