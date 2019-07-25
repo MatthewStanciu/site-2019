@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme/config'
-import { Box, Heading } from 'rebass'
+import { Box, Flex, Heading } from 'rebass'
 import { Layout } from '../components/Layout'
 import { Container } from '../components/Container'
 import { Portrait } from '../components/Portrait'
+import Icon from '@hackclub/icons'
 
 const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
   display: grid;
@@ -33,6 +34,26 @@ const Space = styled.span`
   }
 `
 
+const Service = ({ href, service, ...props }) => (
+  <Box
+    as="a"
+    target="_blank"
+    rel="noopener"
+    href={href}
+    mr={3}
+    color={theme.colors.blue}
+    aria-label={service}
+    children={<Icon glyph={service} size={48} />}
+    {...props}
+  />
+)
+
+const services = {
+  github: 'MatthewStanciu',
+  twitter: 'MatthewStanciu',
+  instagram: 'matthewstanciu'
+}
+
 export default () => (
   <Layout>
     <Header>
@@ -47,6 +68,16 @@ export default () => (
           Hi, I’m<Space>&nbsp;</Space>
           Matthew.
         </Heading>
+        <Flex flexWrap="wrap" mt={[3, 4]}>
+          {Object.entries(services).map(([service, username]) => (
+            <Service
+              key={service}
+              service={service}
+              href={`https://${service}.com/${username}`}
+            />
+          ))}
+          <Service service="email" href="mailto:matthew@matthewstanciu.me" />
+        </Flex>
       </Box>
     </Header>
   </Layout>
