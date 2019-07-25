@@ -67,7 +67,9 @@ export const GridItemBanner = styled(Box).attrs({
   bg: 'lightBlue',
   p: 3
 })`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: 1.25;
   flex: 1 1 auto;
   flex-shrink: none;
