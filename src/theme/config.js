@@ -7,7 +7,7 @@ const colors = {
   turquoise: '#1FA49F'
 }
 
-const font = 'IBM Plex Sans'
+const font = '"IBM Plex Sans", system-ui, Roboto, sans-serif'
 
 const fontSizes = [12, 14, 16, 18, 24, 32, 48, 64, 72, 96]
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
