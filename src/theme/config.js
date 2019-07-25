@@ -4,8 +4,7 @@ const colors = {
   red: '#DB3847',
   lightRed: '#F75250',
   blue: '#406FC9',
-  lightBlue: '#00A0D4',
-  turquoise: '#1FA49F'
+  lightBlue: '#00A0D4'
 }
 
 const font = '"IBM Plex Sans", system-ui, Roboto, sans-serif'
