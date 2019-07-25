@@ -15,7 +15,8 @@
       "name": "West Lafayette Hack Club",
       "desc": "a a  aa aaaaa aaaaa",
       "url": "https://hackclub.com/",
-      "img": "hackclub-map.png"
+      "img": "hackclub-map.png",
+      "imgDark": "hackclub-map-dark.png"
     },
     {
       "name": "Hack Pennsylvania",

@@ -37,7 +37,7 @@ export const GridItem = styled(Card).attrs({
         transform: translateX(-6px);
       }
     }
-    img {
+    picture {
       max-width: 45% !important;
     }
   }
@@ -50,10 +50,13 @@ export const GridItem = styled(Card).attrs({
       left: -2rem;
     }
   }
-  img {
+  picture {
     width: 100%;
     max-width: 100%;
     max-height: 12rem;
+  }
+  img {
+    width: 100%;
     object-fit: cover;
   }
 `
@@ -77,9 +80,17 @@ export const GridItemBanner = styled(Box).attrs({
   }
 `
 
-const Project = ({ name, desc, url, img }) => (
+const Project = ({ name, desc, url, img, imgDark }) => (
   <GridItem as="a" href={url} target="_blank">
-    <img src={require(`../../static/${img}`)} alt={name} />
+    <picture>
+      {imgDark && (
+        <source
+          srcset={require(`../../static/${imgDark}`)}
+          media="(prefers-color-scheme: dark)"
+        />
+      )}
+      <img src={require(`../../static/${img}`)} alt={name} />
+    </picture>
     <GridItemBanner>
       <Heading as="h3" mb={2}>
         {name}
