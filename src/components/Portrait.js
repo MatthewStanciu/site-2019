@@ -10,6 +10,9 @@ export const Portrait = styled.img`
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
   object-fit: cover;
   ${theme.mediaQueries.md} {
-    min-height: 36rem;
+    min-height: 28rem;
+  }
+  ${theme.mediaQueries.lg} {
+    min-height: 28rem;
   }
 `

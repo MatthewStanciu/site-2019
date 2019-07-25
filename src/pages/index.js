@@ -18,6 +18,13 @@ const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: [5, 6] })`
     text-align: left;
   }
 
+  ${theme.mediaQueries.lg} {
+    svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
   h1 {
     line-height: 1.125;
   }
@@ -63,12 +70,16 @@ export default () => (
           as="h1"
           color="red"
           mt={[null, 3, 4]}
-          fontSize={[6, null, null, 7]}
+          fontSize={[6, null, 7, 9]}
         >
           Hi, I’m<Space>&nbsp;</Space>
           Matthew.
         </Heading>
-        <Flex flexWrap="wrap" mt={[3, 4]}>
+        <Flex
+          flexWrap="wrap"
+          justifyContent={['center', null, 'flex-start']}
+          mt={[2, 3]}
+        >
           {Object.entries(services).map(([service, username]) => (
             <Service
               key={service}
