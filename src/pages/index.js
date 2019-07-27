@@ -144,7 +144,7 @@ export default () => (
       </Box>
     </Header>
     <Container maxWidth={48}>
-      <Heading as="h2" textAlign="center" mb={4} fontSize={[4, null, 4, 6]}>
+      <Heading as="h2" textAlign="center" mb={4} fontSize={['25px', 6]}>
         What I’m Working On
       </Heading>
       {projects.map(project => (
