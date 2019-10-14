@@ -11,7 +11,7 @@ const meta = tags =>
 
 export default ({ children }) => (
   <ThemeProvider>
-    <Helmet title="Matthew Stanciu">
+    <Helmet title={title}>
       <html lang="en" />
       <meta charSet="UTF-8" />
       <meta
