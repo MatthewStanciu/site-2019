@@ -126,7 +126,7 @@ export default () => (
         </Flex>
 
         <Text fontSize={[3, 4]} mb={3}>
-          I’m a 17-year-old high school senior from West Lafayette, Indiana. I
+          I’m an 18-year-old high school senior from West Lafayette, Indiana. I
           write code, organize hackathons, and eat Chipotle. 🏳️‍🌈
         </Text>
         <Text fontSize={[3, 4]}>
