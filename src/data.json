@@ -11,6 +11,12 @@
   },
   "projects": [
     {
+      "name": "Hack Club",
+      "desc": "I graduated high school a semester early and moved to New Haven, CT to work for Hack Club full-time this semester, on their clubs team.",
+      "url": "https://hackclub.com",
+      "img": "hackclub.jpeg"
+    },
+    {
       "name": "Windy City Hacks",
       "desc": "On June 22-23, 2019, I ran Windy City Hacks, a 24-hour high school hackathon in Chicago. I spent 4 months leading a team of 7 to organize this event, raising a total of $14k and garnering 320 signups (160 of which attended).",
       "url": "https://windyhacks.com/",
