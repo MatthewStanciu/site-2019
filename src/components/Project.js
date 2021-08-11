@@ -27,14 +27,14 @@ export const GridItem = styled(Card).attrs({
       flex-direction: row-reverse;
       &:hover,
       &:focus {
-        transform: translateX(6px);
+        transform: translateX(-6px);
       }
     }
     &:nth-child(odd) {
       text-align: right;
       &:hover,
       &:focus {
-        transform: translateX(-6px);
+        transform: translateX(6px);
       }
     }
     picture {

@@ -98,7 +98,7 @@ const ProjectLink = styled(Link)`
 export default () => (
   <Layout>
     <Header>
-      <Portrait src={require('../../static/portrait.jpg')} />
+      <Portrait src={require('../../static/bloomington-portrait.jpg')} />
       <Box>
         <Heading
           as="h1"
@@ -126,20 +126,19 @@ export default () => (
         </Flex>
 
         <Text fontSize={[3, 4]} mb={3}>
-          I’m an 18-year-old high school senior from West Lafayette, Indiana. I
+          I’m a 19-year-old web developer from West Lafayette, IN. I
           write code, organize hackathons, and eat Chipotle. 🏳️‍🌈
         </Text>
         <Text fontSize={[3, 4]}>
-          I’m passionate about bringing tech opportunities to people who don’t
-          have them, particularly to students in the Midwest. From{' '}
+          In high school, I did cool things like organize{' '}
           <ProjectLink target="_" href="https://windyhacks.com">
             Windy City Hacks
           </ProjectLink>{' '}
-          to the{' '}
+          & run a {' '}
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
           </ProjectLink>{' '}
-          I lead at my school, I try to make an impact with everything I do.
+          at my high school. Now I'm continuing to grow at Purdue University.
         </Text>
       </Box>
     </Header>

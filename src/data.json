@@ -12,9 +12,9 @@
   "projects": [
     {
       "name": "Hack Club",
-      "desc": "I graduated high school a semester early in December 2019 and moved to New Haven, CT to work for Hack Club full-time before college. This semester, I'm building a new curriculum for Hack Clubs and driving across North America to visit clubs in person.",
+      "desc": "I graduated high school a semester early in December 2019 & took a gap year before college to work for Hack Club, a nonprofit that helps high schoolers start coding clubs. I worked out of Burlington, VT until June 2021 as the head of the clubs program, introducing new curriculum & a new leader guide, & helping students run awesome coding clubs.",
       "url": "https://hackclub.com",
-      "img": "hackclub.jpeg"
+      "img": "hack-club-hq-vt.jpg"
     },
     {
       "name": "Windy City Hacks",
@@ -24,10 +24,9 @@
     },
     {
       "name": "West Lafayette Hack Club",
-      "desc": "I've been leading a Hack Club at my high school for 2 years. Meetings run like mini-hackathons where students learn to code by working on self-directed projects.",
+      "desc": "I led a Hack Club at my high school for 2 and a half years. Meetings ran like mini-hackathons, where students learn to code by hacking on their own projects. It became a go-to place for students at my high school to explore coding in a fun, engaging way, & helped me grow tremendously as a leader.",
       "url": "https://hackclub.com/",
-      "img": "hackclub-map.png",
-      "imgDark": "hackclub-map-dark.png"
+      "img": "my-hack-club.jpeg"
     },
     {
       "name": "Hack Pennsylvania",
