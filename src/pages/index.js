@@ -138,7 +138,7 @@ export default () => (
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
           </ProjectLink>{' '}
-          at my high school. Now I'm continuing to grow at Purdue University.
+          at my high school. Now I'm continuing to grow at Purdue University. ✨🚀👁
         </Text>
       </Box>
     </Header>
