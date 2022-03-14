@@ -21,13 +21,19 @@ export const GridItem = styled(Card).attrs({
   }
 `;
 
-const Repo = ({ name, desc, url }) => (
+const Repo = ({ name, desc, tools, url }) => (
   <GridItem as="a" href={url} target="_blank">
     <Heading as="h3" fontSize={4} mb={1}>
       {name}
     </Heading>
     <Text>{desc}</Text>
     <Flex mt={2} alignItems="center">
+      <Icon glyph="code" size={24} />
+      <Text pl={2} fontSize={1}>
+        {tools}
+      </Text>
+    </Flex>
+    <Flex alignItems="center">
       <Icon glyph="github" size={24} />
       <Text pl={2} fontSize={1}>
         {url.split(".com/")[1]}
