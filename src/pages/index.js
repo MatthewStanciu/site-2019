@@ -153,8 +153,8 @@ export default () => (
       </Box>
     </Header>
     <Container maxWidth={54} mb={[4, 6]}>
-      <Heading as="h2" textAlign="center" mb={4} fontSize={["25px", 6]}>
-        Open-Source Projects I’m Proud Of
+      <Heading as="h2" textAlign="center" mb={4} fontSize={[5, 6]}>
+        Selected Open Source
       </Heading>
       <RepoGrid>
         {repos.map((repo) => (
@@ -163,8 +163,8 @@ export default () => (
       </RepoGrid>
     </Container>
     <Container maxWidth={48}>
-      <Heading as="h2" textAlign="center" mb={4} fontSize={["25px", 6]}>
-        What I’m Working On
+      <Heading as="h2" textAlign="center" mb={4} fontSize={[5, 6]}>
+        Previous Projects
       </Heading>
       {projects.map((project) => (
         <Project {...project} key={project.img} />
