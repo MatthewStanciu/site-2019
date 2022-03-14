@@ -43,6 +43,12 @@
   ],
   "projects": [
     {
+      "name": "The Hacker Zephyr",
+      "desc": "Summer 2021, I helped organize a hackathon on a chartered train across the US, from Burlington, Vermont to Los Angeles, California. Over 10 days, 42 high schoolers built hundreds of mini projects on a local intranet as we traveled 3,502 miles across the country.",
+      "url": "https://github.com/hackclub/the-hacker-zephyr",
+      "img": "zephyr.jpg"
+    },
+    {
       "name": "Hack Club",
       "desc": "I graduated high school a semester early in December 2019 & took a gap year before college to work for Hack Club, a nonprofit that helps high schoolers start coding clubs. I worked out of Burlington, VT until June 2021 as the head of the clubs program, introducing new curriculum & a new leader guide, & helping students run awesome coding clubs.",
       "url": "https://hackclub.com",
