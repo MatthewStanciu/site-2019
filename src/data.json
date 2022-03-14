@@ -12,7 +12,7 @@
   "repos": [
     {
       "name": "Purdue Hackers Events",
-      "desc": "A website where you can check out all Purdue Hackers events & RSVP for upcoming events.",
+      "desc": "A website for Purdue students to view & get an email reminder for upcoming Purdue Hackers events.",
       "url": "https://github.com/MatthewStanciu/purduehackers-events"
     },
     {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Card, Text, Heading, Flex } from "rebass";
-import Icon from "@hackclub/icons";
+import Icon from "supercons";
 import theme from "../theme/config";
 
 export const GridItem = styled(Card).attrs({

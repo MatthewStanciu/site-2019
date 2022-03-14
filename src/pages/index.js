@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { Box, Flex, Heading, Text, Link } from "rebass";
 import { Container } from "../components/Container";
 import Project from "../components/Project";
-import Icon from "@hackclub/icons";
+import Icon from "supercons";
 import { services, projects, repos } from "../data.json";
 import Repo from "../components/Repo";
 

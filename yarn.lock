@@ -869,12 +869,6 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@hackclub/icons@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@hackclub/icons/-/icons-0.0.2.tgz#fcd34db70b08c8be11da752b080a53f31de08fc0"
-  dependencies:
-    react "^16.8.3"
-
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -7471,7 +7465,7 @@ react@^16.11.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-react@^16.8.3, react@^16.8.6:
+react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   dependencies:
@@ -8504,6 +8498,11 @@ stylis-rule-sheet@^0.0.10:
 stylis@^3.5.0:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.4.tgz#f665f25f5e299cf3d64654ab949a57c768b73fbe"
+
+supercons@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/supercons/-/supercons-0.0.1.tgz#b016f843ec930e30889dff01bdd5086398bbb4bd"
+  integrity sha512-ET70X83boPmv8ze9r5CuGXJCBZ9mbQ32RgE1CIwOX4K2hv9yA9mu8mtkt52VKER1PDZFSf5v/+9neLD5d1bFCQ==
 
 supports-color@^2.0.0:
   version "2.0.0"
