@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import theme from "../theme/config";
-import Layout from "../components/Layout";
-import { Box, Flex, Heading, Text, Link } from "rebass";
-import { Container } from "../components/Container";
-import Project from "../components/Project";
-import Icon from "supercons";
-import { services, projects, repos } from "../data.json";
-import Repo from "../components/Repo";
+import React from 'react'
+import styled from 'styled-components'
+import theme from '../theme/config'
+import Layout from '../components/Layout'
+import { Box, Flex, Heading, Text, Link } from 'rebass'
+import { Container } from '../components/Container'
+import Project from '../components/Project'
+import Icon from 'supercons'
+import { services, projects, repos } from '../data.json'
+import Repo from '../components/Repo'
 
 const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: 6 })`
   display: grid;
@@ -36,18 +36,18 @@ const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: 6 })`
   h1 {
     line-height: 1.125;
   }
-`;
+`
 
 // Hi, I’m Matthew, & I care about text wrapping a LOT
 const Space = styled.span`
   display: inline;
   &:before {
-    content: " ";
+    content: ' ';
     ${theme.mediaQueries.sm} {
-      content: "";
+      content: '';
     }
   }
-`;
+`
 
 const Portrait = styled.img`
   overflow: hidden;
@@ -59,7 +59,7 @@ const Portrait = styled.img`
   ${theme.mediaQueries.md} {
     min-height: 28rem;
   }
-`;
+`
 
 const Service = ({ href, service, ...props }) => (
   <Box
@@ -73,7 +73,7 @@ const Service = ({ href, service, ...props }) => (
     children={<Icon glyph={service} size={48} />}
     {...props}
   />
-);
+)
 
 const ProjectLink = styled(Link)`
   text-decoration: none;
@@ -94,7 +94,7 @@ const ProjectLink = styled(Link)`
       color: ${theme.colors.red};
     }
   }
-`;
+`
 
 const RepoGrid = styled(Box)`
   display: grid;
@@ -102,12 +102,12 @@ const RepoGrid = styled(Box)`
   ${theme.mediaQueries.md} {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-`;
+`
 
 export default () => (
   <Layout>
     <Header>
-      <Portrait src={require("../../static/bloomington-portrait.jpg")} />
+      <Portrait src={require('../../static/bloomington-portrait.jpg')} />
       <Box>
         <Heading
           as="h1"
@@ -120,7 +120,7 @@ export default () => (
         </Heading>
         <Flex
           flexWrap="wrap"
-          justifyContent={["center", null, "flex-start"]}
+          justifyContent={['center', null, 'flex-start']}
           mt={[2, 3]}
           mb={[3, 4]}
         >
@@ -139,14 +139,14 @@ export default () => (
           organize hackathons, and eat Chipotle. 🏳️‍🌈
         </Text>
         <Text fontSize={[3, 4]}>
-          In high school, I did cool things like organize{" "}
+          In high school, I did cool things like organize{' '}
           <ProjectLink target="_" href="https://windyhacks.com">
             Windy City Hacks
-          </ProjectLink>{" "}
-          & run a{" "}
+          </ProjectLink>{' '}
+          & run a{' '}
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
-          </ProjectLink>{" "}
+          </ProjectLink>{' '}
           at my high school. Now I'm continuing to grow at Purdue University.
           ✨🚀👁
         </Text>
@@ -171,4 +171,4 @@ export default () => (
       ))}
     </Container>
   </Layout>
-);
+)

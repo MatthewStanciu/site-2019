@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Card, Text, Heading, Box } from "rebass";
-import theme from "../theme/config";
+import React from 'react'
+import styled from 'styled-components'
+import { Card, Text, Heading, Box } from 'rebass'
+import theme from '../theme/config'
 
 export const GridItem = styled(Card).attrs({
-  bg: "white",
+  bg: 'white',
   width: 1,
-  my: [3, 4, 5],
+  my: [3, 4, 5]
 })`
   display: flex;
   flex-direction: column;
@@ -59,13 +59,13 @@ export const GridItem = styled(Card).attrs({
     width: 100%;
     object-fit: cover;
   }
-`;
+`
 
 export const GridItemBanner = styled(Box).attrs({
   fontSize: 3,
-  color: "coffee",
-  bg: "lightBlue",
-  p: 3,
+  color: 'coffee',
+  bg: 'lightBlue',
+  p: 3
 })`
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ export const GridItemBanner = styled(Box).attrs({
     background-color: ${theme.colors.blue};
     color: ${theme.colors.cream};
   }
-`;
+`
 
 const Project = ({ name, desc, url, img, imgDark }) => (
   <GridItem as="a" href={url} target="_blank">
@@ -100,6 +100,6 @@ const Project = ({ name, desc, url, img, imgDark }) => (
       <Text>{desc}</Text>
     </GridItemBanner>
   </GridItem>
-);
+)
 
-export default Project;
+export default Project

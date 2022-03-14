@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { Card, Text, Heading, Flex } from "rebass";
-import Icon from "supercons";
-import theme from "../theme/config";
+import React from 'react'
+import styled from 'styled-components'
+import { Card, Text, Heading, Flex } from 'rebass'
+import Icon from 'supercons'
+import theme from '../theme/config'
 
 export const GridItem = styled(Card).attrs({
-  bg: "red",
-  color: "cream",
+  bg: 'red',
+  color: 'cream',
   width: 1,
-  p: 3,
+  p: 3
 })`
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.125);
@@ -19,7 +19,7 @@ export const GridItem = styled(Card).attrs({
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.125);
     transform: translateY(-6px);
   }
-`;
+`
 
 const Repo = ({ name, desc, tools, url }) => (
   <GridItem as="a" href={url} target="_blank">
@@ -36,10 +36,10 @@ const Repo = ({ name, desc, tools, url }) => (
     <Flex alignItems="center">
       <Icon glyph="github" size={24} />
       <Text pl={2} fontSize={1}>
-        {url.split(".com/")[1]}
+        {url.split('.com/')[1]}
       </Text>
     </Flex>
   </GridItem>
-);
+)
 
-export default Repo;
+export default Repo
