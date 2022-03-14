@@ -9,6 +9,38 @@
     "twitter": "MatthewStanciu",
     "instagram": "matthewstanciu"
   },
+  "repos": [
+    {
+      "name": "Purdue Hackers Events",
+      "desc": "A website where you can check out all Purdue Hackers events & RSVP for upcoming events.",
+      "url": "https://github.com/MatthewStanciu/purduehackers-events"
+    },
+    {
+      "name": "Hack Club Meetings",
+      "desc": "Hack Club meeting recordings and interactive articles to help new club leaders run great club meetings.",
+      "url": "https://github.com/hackclub/meetings"
+    },
+    {
+      "name": "Scrappy",
+      "desc": "The Slack bot that powers Scrapbook, Hack Club's social network for sharing daily project updates.",
+      "url": "https://github.com/hackclub/scrappy"
+    },
+    {
+      "name": "Apple Music Slack Status",
+      "desc": "A Slack app that sets your status to the current song from Apple Music.",
+      "url": "https://github.com/MatthewStanciu/apple-music-slack-status"
+    },
+    {
+      "name": "colors.zephyr",
+      "desc": "Made on The Hacker Zephyr, a collaborative pixel drawing canvas for fellow hackers aboard the train.",
+      "url": "https://github.com/MatthewStanciu/colors.zephyr"
+    },
+    {
+      "name": "Music Timer",
+      "desc": "A web app that displays a timer next to the currently-playing song, for presenting technical workshops.",
+      "url": "https://github.com/MatthewStanciu/music-timer"
+    }
+  ],
   "projects": [
     {
       "name": "Hack Club",
