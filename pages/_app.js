@@ -1,19 +1,14 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Head from 'next/head'
 import ThemeProvider from '../theme'
 import theme from '../theme/config'
 import { default as data } from '../data.json'
 const { name, title, description, url, img } = data
 
-const meta = (tags) =>
-  tags.map((props, index) =>
-    React.createElement('meta', { ...props, key: index })
-  )
-
-export default ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }) => (
   <ThemeProvider>
-    <Helmet title={title}>
-      <html lang="en" />
+    <Head>
+      <title>{title}</title>
       <meta charSet="UTF-8" />
       <meta
         name="viewport"
@@ -24,23 +19,22 @@ export default ({ Component, pageProps }) => (
         rel="stylesheet"
       />
       <meta name="theme-color" content={theme.colors.red} />
-      {meta([
-        { name: 'description', content: description },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:description', content: description },
-        { name: 'twitter:domain', content: url },
-        { name: 'twitter:site', content: url },
-        { name: 'twitter:image', content: img },
-        { name: 'twitter:title', content: title },
-        { property: 'og:description', content: description },
-        { property: 'og:image', content: img },
-        { property: 'og:locale', content: 'en_US' },
-        { property: 'og:site_name', content: name },
-        { property: 'og:title', content: title },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: url }
-      ])}
-    </Helmet>
+      <meta name="description" content={description} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:domain" content={url} />
+      <meta name="twitter:site" content={url} />
+      <meta name="twitter:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={img} />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:site_name" content={name} />
+      <meta property="og:title" content={title} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+    </Head>
     <Component {...pageProps} />
   </ThemeProvider>
 )
+
+export default App
