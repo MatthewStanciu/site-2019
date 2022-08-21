@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme/config'
+import Layout from '../components/Layout'
 import { Box, Flex, Heading, Text, Link } from 'rebass'
 import { Container } from '../components/Container'
 import Project from '../components/Project'
@@ -105,7 +106,7 @@ const RepoGrid = styled(Box)`
 `
 
 export default () => (
-  <>
+  <Layout>
     <Header>
       <Portrait src="bloomington-portrait.jpg" />
       <Box>
@@ -170,5 +171,5 @@ export default () => (
         <Project {...project} key={project.img} />
       ))}
     </Container>
-  </>
+  </Layout>
 )
