@@ -7,16 +7,16 @@ const { name, title, description, url, img } = data
 
 const App = ({ Component, pageProps }) => (
   <ThemeProvider>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
     <Head>
       <title>{title}</title>
       <meta charSet="UTF-8" />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,viewport-fit=cover"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap"
-        rel="stylesheet"
       />
       <meta name="theme-color" content={theme.colors.red} />
       <meta name="description" content={description} />
