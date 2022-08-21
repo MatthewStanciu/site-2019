@@ -107,7 +107,7 @@ const RepoGrid = styled(Box)`
 export default () => (
   <Layout>
     <Header>
-      <Portrait src={require('../../static/bloomington-portrait.jpg')} />
+      <Portrait src="bloomington-portrait.jpg" />
       <Box>
         <Heading
           as="h1"

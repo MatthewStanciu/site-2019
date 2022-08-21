@@ -87,11 +87,11 @@ const Project = ({ name, desc, url, img, imgDark }) => (
     <picture>
       {imgDark && (
         <source
-          srcset={require(`../../static/${imgDark}`)}
+          srcset={require(`../public/${imgDark}`)}
           media="(prefers-color-scheme: dark)"
         />
       )}
-      <img src={require(`../../static/${img}`)} alt={name} />
+      <img src={img} alt={name} />
     </picture>
     <GridItemBanner>
       <Heading as="h3" fontSize={[4, 5]} mb={2}>
