@@ -6,8 +6,9 @@ import { Box, Flex, Heading, Text, Link } from 'rebass'
 import { Container } from '../components/Container'
 import Project from '../components/Project'
 import Icon from 'supercons'
-import { services, projects, repos } from '../data.json'
 import Repo from '../components/Repo'
+import { default as data } from '../data.json'
+const { services, projects, repos } = data
 
 const Header = styled(Container).attrs({ maxWidth: 72, px: 3, mb: 6 })`
   display: grid;

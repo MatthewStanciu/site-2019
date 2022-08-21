@@ -2,9 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import ThemeProvider from '../theme'
 import theme from '../theme/config'
-import { name, title, description, url, img } from '../data.json'
+import { default as data } from '../data.json'
+const { name, title, description, url, img } = data
 
-const meta = tags =>
+const meta = (tags) =>
   tags.map((props, index) =>
     React.createElement('meta', { ...props, key: index })
   )
