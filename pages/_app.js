@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Head from 'next/head'
 import ThemeProvider from '../theme'
 import theme from '../theme/config'
 import { default as data } from '../data.json'
@@ -10,18 +10,14 @@ const meta = (tags) =>
     React.createElement('meta', { ...props, key: index })
   )
 
-export default ({ children }) => (
+export default ({ Component, pageProps }) => (
   <ThemeProvider>
-    <Helmet title={title}>
+    <Head title={title}>
       <html lang="en" />
       <meta charSet="UTF-8" />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,viewport-fit=cover"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap"
-        rel="stylesheet"
       />
       <meta name="theme-color" content={theme.colors.red} />
       {meta([
@@ -40,7 +36,7 @@ export default ({ children }) => (
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: url }
       ])}
-    </Helmet>
-    {children}
+    </Head>
+    <Component {...pageProps} />
   </ThemeProvider>
 )
