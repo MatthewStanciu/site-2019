@@ -10,7 +10,7 @@ const meta = (tags) =>
     React.createElement('meta', { ...props, key: index })
   )
 
-export default ({ children }) => (
+export default ({ Component, pageProps }) => (
   <ThemeProvider>
     <Helmet title={title}>
       <html lang="en" />
@@ -41,6 +41,6 @@ export default ({ children }) => (
         { property: 'og:url', content: url }
       ])}
     </Helmet>
-    {children}
+    <Component {...pageProps} />
   </ThemeProvider>
 )
