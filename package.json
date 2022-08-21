@@ -12,7 +12,7 @@
     "fmt": "npx prettier \"{src/**,}/*.js\" --single-quote --no-semi --write"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
