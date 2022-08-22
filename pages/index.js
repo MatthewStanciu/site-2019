@@ -135,20 +135,22 @@ export default () => (
         </Flex>
 
         <Text fontSize={[3, 4]} mb={3}>
-          I’m a 20-year-old web developer from West Lafayette, IN. I write code,
-          organize hackathons, and eat Chipotle. 🏳️‍🌈
+          I’m a 20-year-old web developer from West Lafayette, Indiana. 🏳️‍🌈 :)
         </Text>
         <Text fontSize={[3, 4]}>
-          In high school, I did cool things like organize{' '}
-          <ProjectLink target="_" href="https://windyhacks.com">
-            Windy City Hacks
-          </ProjectLink>{' '}
-          & run a{' '}
+          In the past, I led{' '}
           <ProjectLink target="_" href="https://hackclub.com">
             Hack Club
-          </ProjectLink>{' '}
-          at my high school. Now I'm continuing to grow at Purdue University.
-          ✨🚀👁
+          </ProjectLink>
+          ’s clubs program and interned at{' '}
+          <ProjectLink target="_" href="https://vercel.com">
+            Vercel
+          </ProjectLink>
+          . Currently, I’m studying at Purdue University and building{' '}
+          <ProjectLink target="_" href="https://events.purduehackers.com">
+            Purdue Hackers
+          </ProjectLink>
+          . ✨🚀👁
         </Text>
       </Box>
     </Header>
