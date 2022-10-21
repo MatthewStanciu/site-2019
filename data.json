@@ -11,10 +11,16 @@
   },
   "repos": [
     {
+      "name": "Lightning Time ⚡️",
+      "desc": "A new way to measure time, including an interactive blog post & npm package.",
+      "tools": "Zap ⚡️ • Next.js • TypeScript • Tailwind • MDX",
+      "url": "https://github.com/purduehackers/time"
+    },
+    {
       "name": "Purdue Hackers Events",
       "desc": "A website for Purdue students to view & get an email reminder for upcoming Purdue Hackers events.",
       "tools": "TypeScript • Next.js • Tailwind",
-      "url": "https://github.com/MatthewStanciu/purduehackers-events"
+      "url": "https://github.com/purduehackers/events"
     },
     {
       "name": "Hack Club Meetings",
@@ -39,15 +45,15 @@
       "desc": "Made on The Hacker Zephyr, a collaborative pixel drawing canvas for fellow hackers aboard the train.",
       "tools": "HTML • JavaScript",
       "url": "https://github.com/MatthewStanciu/colors.zephyr"
-    },
-    {
-      "name": "Music Timer",
-      "desc": "A web app that displays a timer next to the currently-playing song, for presenting technical workshops.",
-      "tools": "Next.js",
-      "url": "https://github.com/MatthewStanciu/music-timer"
     }
   ],
   "projects": [
+    {
+      "name": "Purdue Hackers",
+      "desc": "I've been working on Purdue Hackers since starting college Fall 2021, and began leading it Fall 2022. Via weekly workshops, weekly Hack Nights, and a vibrant Discord community, we're building a universe full of wonderful and friendly people who build & ship creative projects together. 💛⚡️",
+      "url": "https://github.com/purduehackers",
+      "img": "purdue-hackers-hack-night.jpeg"
+    },
     {
       "name": "The Hacker Zephyr",
       "desc": "Summer 2021, I helped organize a hackathon on a chartered train across the US, from Burlington, Vermont to Los Angeles, California. Over 10 days, 42 high schoolers built hundreds of mini projects on a local intranet as we traveled 3,502 miles across the country.",
