@@ -166,7 +166,7 @@ export default () => (
     </Container>
     <Container maxWidth={48}>
       <Heading as="h2" textAlign="center" mb={4} fontSize={[5, 6]}>
-        Previous Projects
+        Projects
       </Heading>
       {projects.map((project) => (
         <Project {...project} key={project.img} />
