@@ -147,7 +147,7 @@ export default () => (
             Vercel
           </ProjectLink>
           . Currently, I’m studying at Purdue University and building{' '}
-          <ProjectLink target="_" href="https://events.purduehackers.com">
+          <ProjectLink target="_" href="https://purduehackers.com">
             Purdue Hackers
           </ProjectLink>
           . ✨🚀👁
