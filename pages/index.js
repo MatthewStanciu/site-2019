@@ -135,7 +135,7 @@ export default () => (
         </Flex>
 
         <Text fontSize={[3, 4]} mb={3}>
-          I’m a 20-year-old web developer from West Lafayette, Indiana. 🏳️‍🌈 :)
+          I’m a 21-year-old web developer from West Lafayette, Indiana. 🏳️‍🌈 :)
         </Text>
         <Text fontSize={[3, 4]}>
           In the past, I led{' '}
